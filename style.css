@@ -23,6 +23,10 @@ body {
   width: 100%;
 }
 
+html {
+  font-size: clamp;
+}
+
 body {
   background-color: #121212;
   font-family: roboto;
