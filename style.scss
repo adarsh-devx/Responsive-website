@@ -2,29 +2,35 @@
   font-family: chillax;
   src: url(./63cffc0a3942456e003bc265_Chillax-Regular.ttf);
 }
+
 @font-face {
   font-family: satosi;
   src: url(./63cffc20aa8997095067596f_Satoshi-Light.ttf);
 }
+
 @font-face {
   font-family: roboto;
   src: url(./L0x5DF4xlVMF-BfR8bXMIjhLq38.ttf);
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: white;
 }
+
 html,
 body {
   height: 100%;
   width: 100%;
 }
+
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: #121212;
   font-family: roboto;
 }
+
 @mixin flex-column($gap: 0rem) {
   display: flex;
   flex-direction: column;
@@ -45,7 +51,7 @@ main {
 
       img {
         width: 100%;
-        border-radius: 10px;
+        border-radius: 15px;
       }
     }
 
@@ -53,10 +59,16 @@ main {
       background-color: #1e1e1e;
       @include flex-column(3.5rem);
       padding: 1.5rem;
-      border-radius: 10px;
+      border-radius: 15px;
 
       .text {
         @include flex-column(0.7rem);
+
+
+
+        .break {
+          display: block;
+        }
 
         h1 {
           font-family: chillax;
@@ -65,13 +77,14 @@ main {
           line-height: 120%;
           text-transform: uppercase;
         }
-        p{
-            font-weight: 400;
-            opacity: 0.6;
-            font-family: satosi;
-            font-size: 1.25rem;
-            line-height: 160%;
-            letter-spacing: 1px;
+
+        p {
+          font-weight: 400;
+          opacity: 0.6;
+          font-family: satosi;
+          font-size: 1.25rem;
+          line-height: 160%;
+          letter-spacing: 1px;
         }
 
         button {
@@ -90,6 +103,52 @@ main {
 }
 
 
-@media (min-width:600px){
- 
+@media (min-width:900px) {
+  main {
+
+
+
+
+    section {
+      flex-direction: row;
+      padding: 5.5rem 1rem;
+      gap: 1rem;
+
+
+      .top,
+      .bottom {
+        width: 50%;
+      }
+
+      .bottom {
+        justify-content: space-between;
+        padding: 4rem;
+
+
+
+        .text {
+
+
+          .break {
+            display: none;
+          }
+
+          gap: 0.5rem ;
+
+          h1 {
+            font-size: 4.1rem;
+            font-weight: 400;
+
+          }
+
+          p {
+            width: 90%;
+            font-size: 1.25rem;
+          }
+        }
+      }
+
+
+    }
+  }
 }

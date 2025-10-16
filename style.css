@@ -24,7 +24,7 @@ body {
 }
 
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: #121212;
   font-family: roboto;
 }
 
@@ -46,7 +46,7 @@ main section .top {
 }
 main section .top img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 main section .bottom {
   background-color: #1e1e1e;
@@ -54,12 +54,15 @@ main section .bottom {
   flex-direction: column;
   gap: 3.5rem;
   padding: 1.5rem;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 main section .bottom .text {
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
+}
+main section .bottom .text .break {
+  display: block;
 }
 main section .bottom .text h1 {
   font-family: chillax;
@@ -85,4 +88,34 @@ main section .bottom .text button {
   outline: none;
   padding: 0.7rem 1rem;
   border-radius: 0.5rem;
+}
+
+@media (min-width: 900px) {
+  main section {
+    flex-direction: row;
+    padding: 5.5rem 1rem;
+    gap: 1rem;
+  }
+  main section .top,
+  main section .bottom {
+    width: 50%;
+  }
+  main section .bottom {
+    justify-content: space-between;
+    padding: 4rem;
+  }
+  main section .bottom .text {
+    gap: 0.5rem;
+  }
+  main section .bottom .text .break {
+    display: none;
+  }
+  main section .bottom .text h1 {
+    font-size: 4.1rem;
+    font-weight: 400;
+  }
+  main section .bottom .text p {
+    width: 90%;
+    font-size: 1.25rem;
+  }
 }/*# sourceMappingURL=style.css.map */
