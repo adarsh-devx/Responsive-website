@@ -51,7 +51,7 @@ main section .top {
 }
 main section .top img {
   width: 100%;
-  border-radius: 15px;
+  border-radius: 0.9375rem;
 }
 main section .bottom {
   background-color: #1e1e1e;
@@ -59,7 +59,7 @@ main section .bottom {
   flex-direction: column;
   gap: 3.5rem;
   padding: 1.5rem;
-  border-radius: 15px;
+  border-radius: 0.9375rem;
 }
 main section .bottom .text {
   display: flex;

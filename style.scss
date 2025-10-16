@@ -57,7 +57,7 @@ main {
 
       img {
         width: 100%;
-        border-radius: 15px;
+        border-radius: 0.9375rem;
       }
     }
 
@@ -65,7 +65,7 @@ main {
       background-color: #1e1e1e;
       @include flex-column(3.5rem);
       padding: 1.5rem;
-      border-radius: 15px;
+      border-radius: 0.9375rem;
 
       .text {
         @include flex-column(0.7rem);
