@@ -24,7 +24,7 @@ body {
 }
 
 html {
-  font-size: clamp;
+  font-size: clamp(14px, 1.2vw, 18px);
 }
 
 body {
@@ -75,7 +75,7 @@ main section .bottom .text .break {
 }
 main section .bottom .text h1 {
   font-family: chillax;
-  font-size: 2.25em;
+  font-size: clamp(2rem, 5vw, 4rem);
   font-weight: 300;
   line-height: 120%;
   text-transform: uppercase;
@@ -84,7 +84,7 @@ main section .bottom .text p {
   font-weight: 400;
   opacity: 0.6;
   font-family: satosi;
-  font-size: 1.25rem;
+  font-size: clamp(1rem, 1.2vw, 1.25rem);
   line-height: 160%;
   letter-spacing: 1px;
 }
