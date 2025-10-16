@@ -37,9 +37,15 @@ body {
   gap: $gap;
 }
 
+
+section{
+  max-width:1600px ;
+}
+
 main {
   width: 100%;
   @include flex-column(0rem);
+  align-items: center;
 
   section {
     width: 100%;
